@@ -139,6 +139,7 @@ int main()//Inicio do comando
       printf("\t1 - Registrar Nomes\n");  //opção de menu
       printf("\t2 - Consultar Nomes\n");  //opção de menu
       printf("\t3 - Deletar Nomes\n\n");  //opção de menu
+      printf("\t4 - Sair do sistema\n\n");//Opção de teste para interação com o GITHUB
       printf("escolha a opção desejada:");  //Barra de seleção
    
      scanf("%d", &opcao);  // Escanear opção selecionada
@@ -160,6 +161,11 @@ int main()//Inicio do comando
    	 case 3:
    	 	deletar();//opção de comando "deletar"
    	    break;//parada do comando, substitui o comando "system ("pause") dentro da comando switch
+   	    
+     case  4:
+     	printf("Obrigao por utilizar o sistema!\n");
+     	return 0;
+     	break;
    	    
    	 default:
    		printf("##Essa opção não está disponível.\n\n Escolha uma das opções destacada acima\n\n");//mensagem de retorno
